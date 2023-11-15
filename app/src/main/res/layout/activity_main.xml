@@ -8,12 +8,12 @@
 
 
     <TextView
-        android:id="@+id/textViewResult"
+        android:id="@+id/textViewResults"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="32dp"
-        android:text="Amount in MAD: "
+        android:text="Currency Converter"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -24,7 +24,7 @@
         android:id="@+id/editTextEuro"
         android:layout_width="266dp"
         android:layout_height="47dp"
-        android:layout_below="@id/textViewResult"
+        android:layout_below="@id/textViewResults"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="80dp"
         android:layout_weight="0.9"
@@ -49,6 +49,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextEuro"
         tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="225dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
