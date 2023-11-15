@@ -6,42 +6,49 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-<!--    <TextView-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="Hello World!"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent" />-->
 
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="Amount in MAD: "
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/editTextEuro"
-        android:layout_width="386dp"
-        android:layout_height="40dp"
-        android:hint="Enter EURO amount to convert"
+        android:layout_width="266dp"
+        android:layout_height="47dp"
+        android:layout_below="@id/textViewResult"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:layout_weight="0.9"
+        android:hint="Enter EURO amount"
         android:inputType="numberDecimal"
-        tools:layout_editor_absoluteX="12dp"
-        tools:layout_editor_absoluteY="44dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints,TouchTargetSizeCheck" />
 
     <Button
         android:id="@+id/buttonConvert"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/editTextEuro"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
         android:onClick="convertCurrency"
         android:text="Convert"
-        tools:layout_editor_absoluteX="156dp"
-        tools:layout_editor_absoluteY="98dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEuro"
+        tools:ignore="MissingConstraints" />
 
-    <TextView
-        android:id="@+id/textViewResult"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/buttonConvert"
-        android:layout_marginTop="16dp"
-        android:text=""
-        android:textSize="18sp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

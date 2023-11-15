@@ -8,8 +8,6 @@ import android.widget.TextView;
 
 import java.text.DecimalFormat;
 
-
-
 public class MainActivity extends AppCompatActivity {
 
     private EditText editTextEuro;
